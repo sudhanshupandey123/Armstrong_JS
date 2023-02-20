@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Armstrong Number</title>
+    </head>
+    <body>
+        <script>
+            let num=prompt('Enter Your Number:');
+            let dig=num.length;
+                num=Number(num);
+            let temp=num;
+                console.log(`Given Number is ${num}`)
+            let res=0;
+            while (num>0){
+                rem=num%10;
+                res=rem**dig+res;
+                num=Math.floor(num/10);
+            }
+            console.log(`Resultant Number is ${res}`)
+            if (res==temp){
+                console.log(`Given Number is Armstrong Number ${temp}`)
+            }
+            else{
+                console.log(`Given Number is Not a Armstrong Number ${temp}`)
+            }
+          
+        </script>
+    </body>
+</html>
